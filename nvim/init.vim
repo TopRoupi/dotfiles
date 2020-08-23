@@ -3,7 +3,7 @@ let os = substitute(system('uname'), "\n", "", "")
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'|
-            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+      \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'morhetz/gruvbox'
 Plug 'chusiang/vim-sdcv' " How to install dict see https://askubuntu.com/questions/191125/is-there-an-offline-command-line-dictionary
 Plug 'kassio/neoterm'
@@ -199,3 +199,22 @@ nnoremap <C-l> <C-w><
 " tabs
 nnoremap <leader>w :tabnext<CR>
 nnoremap <leader>q :tabprevious<CR>
+
+" copy text from vim to the system clipboard
+set clipboard+=unnamedplus
+
+" move lines in sublime like, with shift plus ctrl
+nnoremap <C-S-j> :m .+1<CR>==
+nnoremap <C-S-k> :m .-2<CR>==
+inoremap <C-S-j> <Esc>:m .+1<CR>==gi
+inoremap <C-S-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-S-j> :m '>+1<CR>gv=gv
+vnoremap <C-S-k> :m '<-2<CR>gv=gv
+
+nnoremap <C-Down> :m .+1<CR>==
+nnoremap <C-Up> :m .-2<CR>==
+inoremap <C-Down> <Esc>:m .+1<CR>==gi
+inoremap <C-Up> <Esc>:m .-2<CR>==gi
+vnoremap <C-Down> :m '>+1<CR>gv=gv
+vnoremap <C-Up> :m '<-2<CR>gv=gv
+

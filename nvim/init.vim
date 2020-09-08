@@ -69,6 +69,7 @@ Plug 'junegunn/fzf'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'dag/vim-fish'
+Plug 'jpo/vim-railscasts-theme'
 
 let g:LanguageClient_serverCommands = {
     \ 'ruby': ['~/.asdf/shims/solargraph', 'stdio'],
@@ -116,7 +117,7 @@ set number
 set list!                       " Display unprintable characters
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:«
 autocmd filetype html,xml,go set listchars=tab:\│\ ,trail:-,extends:>,precedes:<,nbsp:+
-colorscheme gruvbox
+colorscheme railscasts
 let g:gruvbox_contrast_dark = "medium" " soft, medium, hard
 let g:gruvbox_contrast_light = "medium"
 set background=dark
@@ -204,12 +205,12 @@ nnoremap <leader>q :tabprevious<CR>
 set clipboard+=unnamedplus
 
 " move lines in sublime like, with shift plus ctrl
-nnoremap <C-S-j> :m .+1<CR>==
-nnoremap <C-S-k> :m .-2<CR>==
-inoremap <C-S-j> <Esc>:m .+1<CR>==gi
-inoremap <C-S-k> <Esc>:m .-2<CR>==gi
-vnoremap <C-S-j> :m '>+1<CR>gv=gv
-vnoremap <C-S-k> :m '<-2<CR>gv=gv
+" nnoremap <C-S-j> :m .+1<CR>==
+" nnoremap <C-S-k> :m .-2<CR>==
+" inoremap <C-S-j> <Esc>:m .+1<CR>==gi
+" inoremap <C-S-k> <Esc>:m .-2<CR>==gi
+" vnoremap <C-S-k> :m '<-2<CR>gv=gv
+" vnoremap <C-S-j> :m '>+1<CR>gv=gv
 
 nnoremap <C-Down> :m .+1<CR>==
 nnoremap <C-Up> :m .-2<CR>==

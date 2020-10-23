@@ -13,7 +13,9 @@ Plug 'Shougo/neco-syntax'
 Plug 'ujihisa/neco-look', { 'for': ['text', 'note', 'gitcommit', 'markdown'] }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'itchyny/lightline.vim'
-Plug 'shinchu/lightline-gruvbox.vim'
+" Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'KeitaNakamura/lightline-railscasts.vim'
+Plug 'mengelbrecht/lightline-bufferline'
 Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
 Plug 'tpope/vim-rake', { 'for': 'ruby' }
 Plug 'tpope/vim-surround'
@@ -65,7 +67,6 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'dag/vim-fish'
 Plug 'jpo/vim-railscasts-theme'
@@ -97,7 +98,7 @@ autocmd FileType ruby setlocal omnifunc=LanguageClient#complete
 set termguicolors " true colors
 set exrc " loads project spedific .nvimrc
 
-call deoplete#custom#source('_', 'max_menu_width', 10)
+call deoplete#custom#source('_', 'max_menu_width', 4)
 
 " Misc
 set secure
@@ -105,7 +106,7 @@ set lazyredraw
 set splitbelow
 set splitright
 set diffopt+=vertical
-set shell=/bin/zsh
+set shell=/bin/fish
 scriptencoding utf-8
 set encoding=utf-8
 set termencoding=utf-8
@@ -125,8 +126,6 @@ set list!                       " Display unprintable characters
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:«
 autocmd filetype html,xml,go set listchars=tab:\│\ ,trail:-,extends:>,precedes:<,nbsp:+
 colorscheme railscasts
-let g:gruvbox_contrast_dark = "medium" " soft, medium, hard
-let g:gruvbox_contrast_light = "medium"
 set background=dark
 set t_ut= " fixes transparent BG on tmux
 
@@ -226,7 +225,48 @@ inoremap <C-Up> <Esc>:m .-2<CR>==gi
 vnoremap <C-Down> :m '>+1<CR>gv=gv
 vnoremap <C-Up> :m '<-2<CR>gv=gv
 
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](doc|tmp|node_modules)',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ }
+map <C-p> :GFiles<cr>
+map <leader>p :GFiles<cr>
+
+" Always show tabs
+set showtabline=2
+set noshowmode
+
+let g:lightline = {
+      \ 'colorscheme': 'railscasts',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'tabline': {
+      \   'left': [ ['buffers'] ],
+      \   'right': [ ['close'] ]
+      \ },
+      \ 'component_expand': {
+      \   'buffers': 'lightline#bufferline#buffers'
+      \ },
+      \ 'component_type': {
+      \   'buffers': 'tabsel'
+      \ }
+      \ }
+
+nmap <Leader>1 <Plug>lightline#bufferline#go(1)
+nmap <Leader>2 <Plug>lightline#bufferline#go(2)
+nmap <Leader>3 <Plug>lightline#bufferline#go(3)
+nmap <Leader>4 <Plug>lightline#bufferline#go(4)
+nmap <Leader>5 <Plug>lightline#bufferline#go(5)
+nmap <Leader>6 <Plug>lightline#bufferline#go(6)
+nmap <Leader>7 <Plug>lightline#bufferline#go(7)
+nmap <Leader>8 <Plug>lightline#bufferline#go(8)
+nmap <Leader>9 <Plug>lightline#bufferline#go(9)
+nmap <Leader>0 <Plug>lightline#bufferline#go(10)
+
+nmap <Leader>c1 <Plug>lightline#bufferline#delete(1)
+nmap <Leader>c2 <Plug>lightline#bufferline#delete(2)
+nmap <Leader>c3 <Plug>lightline#bufferline#delete(3)
+nmap <Leader>c4 <Plug>lightline#bufferline#delete(4)
+nmap <Leader>c5 <Plug>lightline#bufferline#delete(5)
+nmap <Leader>c6 <Plug>lightline#bufferline#delete(6)
+nmap <Leader>c7 <Plug>lightline#bufferline#delete(7)
+nmap <Leader>c8 <Plug>lightline#bufferline#delete(8)
+nmap <Leader>c9 <Plug>lightline#bufferline#delete(9)
+nmap <Leader>c0 <Plug>lightline#bufferline#delete(10)

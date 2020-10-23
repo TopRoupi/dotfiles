@@ -9,4 +9,3 @@ alias cfish='nvim ~/.config/fish/config.fish'
 alias ns=nsbox-edge
 alias nsbox=nsbox-edge
 alias nr='nsbox-edge run'
-alias nnvim=~/Downloads/squashfs-root/usr/bin/nvim

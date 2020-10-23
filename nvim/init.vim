@@ -65,15 +65,10 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
-Plug 'junegunn/fzf'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'dag/vim-fish'
 Plug 'jpo/vim-railscasts-theme'
-
-let g:LanguageClient_serverCommands = {
-    \ 'ruby': ['~/.asdf/shims/solargraph', 'stdio'],
-    \ }
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -86,6 +81,18 @@ endif
 Plug 'fishbullet/deoplete-ruby'
 
 call plug#end()
+
+let g:LanguageClient_serverCommands = {
+      \ 'ruby': ['~/.asdf/shims/solargraph', 'stdio'],
+      \ }
+
+
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+
+autocmd FileType ruby setlocal omnifunc=LanguageClient#complete
 
 set termguicolors " true colors
 set exrc " loads project spedific .nvimrc

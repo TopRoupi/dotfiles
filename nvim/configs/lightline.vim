@@ -11,15 +11,10 @@ let g:lightline = {
       \   'left': [ ['buffers'] ],
       \   'right': [ ['close'] ]
       \ },
-      \ 'component_expand': {
-      \   'buffers': 'lightline#bufferline#buffers'
-      \ },
-      \ 'component_type': {
-      \   'buffers': 'tabsel'
-      \ }
       \ }
 
 let g:lightline.component_expand = {
+      \  'buffers': 'lightline#bufferline#buffers',
       \  'linter_checking': 'lightline#ale#checking',
       \  'linter_infos': 'lightline#ale#infos',
       \  'linter_warnings': 'lightline#ale#warnings',
@@ -28,6 +23,7 @@ let g:lightline.component_expand = {
       \ }
 
 let g:lightline.component_type = {
+      \  'buffers': 'tabsel',
       \  'linter_checking': 'right',
       \  'linter_infos': 'right',
       \  'linter_warnings': 'warning',

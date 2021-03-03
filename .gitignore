@@ -1,0 +1,10 @@
+/*
+
+!.gitignore
+
+!nvim/
+nvim/undo
+nvim/viminfo
+!fish/
+
+

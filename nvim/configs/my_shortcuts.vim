@@ -56,3 +56,6 @@ vnoremap <C-Up> :m '<-2<CR>gv=gv
 map <C-p> :GFiles<cr>
 map <leader>p :GFiles<cr>
 
+" clear buffers
+map <leader>r :bufdo bd<cr>
+map <leader>rr :%bd\|e#<cr>

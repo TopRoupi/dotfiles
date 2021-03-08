@@ -8,6 +8,7 @@ let NERDTreeQuitOnOpen=1
 " noob shotcuts
 nnoremap <C-z> u
 nnoremap <C-y> <C-r>
+tnoremap <Esc> <C-\><C-n>
 
 " buffer navigation
 nnoremap <leader>z :bprev<CR>
@@ -59,3 +60,6 @@ map <leader>p :GFiles<cr>
 " clear buffers
 map <leader>r :bufdo bd<cr>
 map <leader>rr :%bd\|e#<cr>
+
+" terminal
+map <leader>c :FloatermToggle<cr>

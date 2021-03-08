@@ -72,3 +72,5 @@ if has("persistent_undo")
 endif
 
 " autocmd VimEnter * NERDTree | wincmd p
+
+set scrolloff=8

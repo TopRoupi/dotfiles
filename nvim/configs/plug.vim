@@ -14,6 +14,8 @@ Plug 'jpo/vim-railscasts-theme'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
 
+Plug 'voldikss/vim-floaterm'
+
 "language support
 Plug 'tpope/vim-haml', { 'for': ['haml'] }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }

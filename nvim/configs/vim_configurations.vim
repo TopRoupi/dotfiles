@@ -29,7 +29,7 @@ set background=dark
 set t_ut= " fixes transparent BG on tmux
 
 " Always edit file, even when swap file is found
-" set shortmess+=A
+set shortmess+=A
 set hidden                         " Don't abandon buffers moved to the background
 set wildmenu                       " Enhanced completion hints in command line
 set backspace=eol,start,indent     " Allow backspacing over indent, eol, & start

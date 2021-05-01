@@ -26,6 +26,9 @@ Plug 'stephpy/vim-yaml'
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'dag/vim-fish'
 
+Plug 'hsanson/vim-android'
+Plug 'udalov/kotlin-vim'
+
 " file explorer
 Plug 'scrooloose/nerdtree'|
       \ Plug 'Xuyuanp/nerdtree-git-plugin'

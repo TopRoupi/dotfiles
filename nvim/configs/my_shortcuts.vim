@@ -9,6 +9,8 @@ let NERDTreeQuitOnOpen=1
 nnoremap <C-z> u
 nnoremap <C-y> <C-r>
 tnoremap <Esc> <C-\><C-n>
+nnoremap <expr> j v:count ? (v:count > 5 ? "m'" . v:count : '') . 'j' : 'gj'
+nnoremap <expr> k v:count ? (v:count > 5 ? "m'" . v:count : '') . 'k' : 'gk'
 
 " buffer navigation
 nnoremap <leader>z :bprev<CR>

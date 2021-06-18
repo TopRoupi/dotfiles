@@ -25,6 +25,7 @@ Plug 'othree/html5.vim'
 Plug 'stephpy/vim-yaml'
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'dag/vim-fish'
+Plug 'vim-crystal/vim-crystal'
 
 Plug 'hsanson/vim-android'
 Plug 'udalov/kotlin-vim'

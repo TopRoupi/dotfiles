@@ -4,6 +4,7 @@
 
 !nvim/
 nvim/undo
+nvim/viminfo.tmp.a
 nvim/viminfo
 !fish/
 

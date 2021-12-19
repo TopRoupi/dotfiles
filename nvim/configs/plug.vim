@@ -14,6 +14,10 @@ Plug 'jpo/vim-railscasts-theme'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
 
+" renamer
+Plug 'nvim-lua/plenary.nvim'
+Plug 'filipdutescu/renamer.nvim', { 'branch': 'master' }
+
 Plug 'voldikss/vim-floaterm'
 
 "language support

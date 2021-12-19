@@ -65,3 +65,8 @@ map <leader>rr :%bd\|e#<cr>
 
 " terminal
 map <leader>c :FloatermToggle<cr>
+
+" renamer
+inoremap <silent> <F2> <cmd>lua require('renamer').rename()<cr>
+nnoremap <silent> <leader>rn <cmd>lua require('renamer').rename()<cr>
+vnoremap <silent> <leader>rn <cmd>lua require('renamer').rename()<cr>

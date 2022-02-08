@@ -3,6 +3,7 @@
 !.gitignore
 
 !nvim/
+!rubocop/
 nvim/undo
 nvim/viminfo.tmp.a
 nvim/viminfo

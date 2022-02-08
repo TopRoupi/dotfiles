@@ -15,26 +15,27 @@ let g:lightline = {
 
 let g:lightline.component_expand = {
       \  'buffers': 'lightline#bufferline#buffers',
-      \  'linter_checking': 'lightline#ale#checking',
-      \  'linter_infos': 'lightline#ale#infos',
-      \  'linter_warnings': 'lightline#ale#warnings',
-      \  'linter_errors': 'lightline#ale#errors',
-      \  'linter_ok': 'lightline#ale#ok',
+      \   'linter_warnings': 'lightline#coc#warnings',
+      \   'linter_errors': 'lightline#coc#errors',
+      \   'linter_info': 'lightline#coc#info',
+      \   'linter_hints': 'lightline#coc#hints',
+      \   'linter_ok': 'lightline#coc#ok',
+      \   'status': 'lightline#coc#status',
       \ }
 
 let g:lightline.component_type = {
       \  'buffers': 'tabsel',
-      \  'linter_checking': 'right',
-      \  'linter_infos': 'right',
-      \  'linter_warnings': 'warning',
-      \  'linter_errors': 'error',
-      \  'linter_ok': 'right',
+      \   'linter_warnings': 'warning',
+      \   'linter_errors': 'error',
+      \   'linter_info': 'info',
+      \   'linter_hints': 'hints',
+      \   'linter_ok': 'left'
       \ }
 
 let g:lightline.active = {
       \ 'right': [ [ 'lineinfo' ],
       \            [ 'percent' ],
-      \            [ 'fileformat', 'fileencoding', 'filetype', 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok' ] ]
+      \            [ 'fileformat', 'fileencoding', 'filetype', 'linter_hints', 'linter_errors', 'linter_warnings', 'linter_info', 'linter_ok', 'status' ] ]
       \ }
 
 " Always show tabs

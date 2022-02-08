@@ -5,4 +5,3 @@ source ~/.config/nvim/configs/lightline.vim
 source ~/.config/nvim/configs/vim_configurations.vim
 source ~/.config/nvim/configs/startify.vim
 source ~/.config/nvim/configs/linters.vim
-source ~/.config/nvim/configs/renamer.lua

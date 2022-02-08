@@ -10,13 +10,16 @@ Plug 'janko-m/vim-test'
 Plug 'ap/vim-css-color'
 Plug 'int3/vim-extradite'
 Plug 'tomtom/tcomment_vim'
-Plug 'jpo/vim-railscasts-theme'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
 
-" renamer
-Plug 'nvim-lua/plenary.nvim'
-Plug 'filipdutescu/renamer.nvim', { 'branch': 'master' }
+"themes
+Plug 'jpo/vim-railscasts-theme'
+" Plug 'KeitaNakamura/railscasts.vim'
+Plug 'carakan/new-railscasts-theme'
+Plug 'crusoexia/vim-monokai'
+Plug 'patstockwell/vim-monokai-tasty'
+Plug 'erichdongubler/vim-sublime-monokai'
 
 Plug 'voldikss/vim-floaterm'
 
@@ -42,7 +45,8 @@ Plug 'scrooloose/nerdtree'|
 Plug 'itchyny/lightline.vim'
 Plug 'KeitaNakamura/lightline-railscasts.vim'
 Plug 'mengelbrecht/lightline-bufferline'
-Plug 'maximbaz/lightline-ale'
+" Plug 'maximbaz/lightline-ale'
+Plug 'josa42/vim-lightline-coc'
 
 " fuzzysearch
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -57,7 +61,6 @@ Plug 'autozimu/LanguageClient-neovim', {
 " autocomplete
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plug 'fishbullet/deoplete-ruby'
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
-

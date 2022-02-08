@@ -25,6 +25,10 @@ set list!                       " Display unprintable characters
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:«
 autocmd filetype html,xml,go set listchars=tab:\│\ ,trail:-,extends:>,precedes:<,nbsp:+
 colorscheme railscasts
+" colorscheme new-railscasts
+" colorscheme monokai
+" colorscheme vim-monokai-tasty
+" colorscheme sublimemonokai
 set background=dark
 set t_ut= " fixes transparent BG on tmux
 

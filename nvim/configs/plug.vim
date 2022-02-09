@@ -26,6 +26,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'sjl/badwolf'
 
 Plug 'voldikss/vim-floaterm'
+Plug 'vimlab/split-term.vim'
 
 "language support
 Plug 'tpope/vim-haml', { 'for': ['haml'] }

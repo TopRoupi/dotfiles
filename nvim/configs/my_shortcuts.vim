@@ -64,4 +64,5 @@ map <leader>r :bufdo bd<cr>
 map <leader>rr :%bd\|e#<cr>
 
 " terminal
-map <leader>c :FloatermToggle<cr>
+" map <leader>c :FloatermToggle<cr>
+map <leader>c :Term<cr>

@@ -16,10 +16,14 @@ Plug 'mhinz/vim-startify'
 "themes
 Plug 'jpo/vim-railscasts-theme'
 " Plug 'KeitaNakamura/railscasts.vim'
-Plug 'carakan/new-railscasts-theme'
-Plug 'crusoexia/vim-monokai'
-Plug 'patstockwell/vim-monokai-tasty'
-Plug 'erichdongubler/vim-sublime-monokai'
+" Plug 'carakan/new-railscasts-theme'
+" Plug 'patstockwell/vim-monokai-tasty'
+" Plug 'erichdongubler/vim-sublime-monokai'
+" Plug 'crusoexia/vim-monokai'
+Plug 'tomasr/molokai'
+Plug 'morhetz/gruvbox'
+Plug 'chriskempson/base16-vim'
+Plug 'sjl/badwolf'
 
 Plug 'voldikss/vim-floaterm'
 

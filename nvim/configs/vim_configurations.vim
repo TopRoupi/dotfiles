@@ -3,6 +3,11 @@ let os = substitute(system('uname'), "\n", "", "")
 set termguicolors " true colors
 set exrc " loads project spedific .nvimrc
 
+set conceallevel=0
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
+set nofoldenable
+
 " Misc
 set secure
 set lazyredraw
@@ -24,7 +29,13 @@ set number
 set list!                       " Display unprintable characters
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:«
 autocmd filetype html,xml,go set listchars=tab:\│\ ,trail:-,extends:>,precedes:<,nbsp:+
-colorscheme railscasts
+" colorscheme railscasts
+" colorscheme badwolf
+" colorscheme gruvbox
+" let g:gruvbox_contrast_dark = 'hard'
+" colorscheme molokai
+" let g:molokai_original = 1
+colorscheme base16-default-dark
 " colorscheme new-railscasts
 " colorscheme monokai
 " colorscheme vim-monokai-tasty

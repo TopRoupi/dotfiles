@@ -35,7 +35,7 @@ let g:lightline.component_type = {
 let g:lightline.active = {
       \ 'right': [ [ 'lineinfo' ],
       \            [ 'percent' ],
-      \            [ 'fileformat', 'fileencoding', 'filetype', 'linter_hints', 'linter_errors', 'linter_warnings', 'linter_info', 'linter_ok', 'status' ] ]
+      \            [ 'fileformat', 'fileencoding', 'filetype', 'linter_hints', 'linter_errors', 'linter_warnings', 'linter_info', 'linter_ok' ] ]
       \ }
 
 " Always show tabs

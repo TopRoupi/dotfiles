@@ -64,5 +64,10 @@ map <leader>r :bufdo bd<cr>
 map <leader>rr :%bd\|e#<cr>
 
 " terminal
-" map <leader>c :FloatermToggle<cr>
-map <leader>c :Term<cr>
+map <leader>cn :FloatermNew --wintype=split<cr>
+map <leader>c :FloatermToggle<cr>
+map <leader>ck :FloatermKill!<cr>
+map <leader>cs :FloatermNext<cr>
+map <leader>cx :FloatermPrev<cr>
+map <leader>ct :FloatermNew --height=0.6 --width=0.6 --wintype=float --position=topleft --autoclose=0 rails test<cr>
+" map <leader>c :Term<cr>

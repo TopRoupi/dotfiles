@@ -32,22 +32,22 @@ nnoremap <M-k> <C-w>k
 nnoremap <M-l> <C-w>l
 
 " resize window
-" nnoremap <C-h> <C-w>>
-" nnoremap <C-j> <C-w>-
-" nnoremap <C-k> <C-w>+
-" nnoremap <C-l> <C-w><
+nnoremap <C-l> <C-w>>
+nnoremap <C-j> <C-w>-
+nnoremap <C-k> <C-w>+
+nnoremap <C-h> <C-w><
 
 " tabs
 nnoremap <leader>w :tabnext<CR>
 nnoremap <leader>q :tabprevious<CR>
 
 " move lines in sublime like, with shift plus ctrl
-nnoremap <C-j> :m .+1<CR>==
-nnoremap <C-k> :m .-2<CR>==
-inoremap <C-j> <Esc>:m .+1<CR>==gi
-inoremap <C-k> <Esc>:m .-2<CR>==gi
-vnoremap <C-k> :m '<-2<CR>gv=gv
-vnoremap <C-j> :m '>+1<CR>gv=gv
+" nnoremap <C-j> :m .+1<CR>==
+" nnoremap <C-k> :m .-2<CR>==
+" inoremap <C-j> <Esc>:m .+1<CR>==gi
+" inoremap <C-k> <Esc>:m .-2<CR>==gi
+" vnoremap <C-k> :m '<-2<CR>gv=gv
+" vnoremap <C-j> :m '>+1<CR>gv=gv
 
 nnoremap <C-Down> :m .+1<CR>==
 nnoremap <C-Up> :m .-2<CR>==

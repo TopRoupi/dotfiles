@@ -12,6 +12,8 @@ Plug 'int3/vim-extradite'
 Plug 'tomtom/tcomment_vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
+Plug 'wfxr/minimap.vim'
+Plug 'LnL7/vim-nix'
 
 "themes
 Plug 'jpo/vim-railscasts-theme'
@@ -25,6 +27,7 @@ Plug 'morhetz/gruvbox'
 Plug 'chriskempson/base16-vim'
 Plug 'sjl/badwolf'
 
+"terminal
 Plug 'voldikss/vim-floaterm'
 Plug 'vimlab/split-term.vim'
 
@@ -38,7 +41,6 @@ Plug 'stephpy/vim-yaml'
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'dag/vim-fish'
 Plug 'vim-crystal/vim-crystal'
-
 Plug 'hsanson/vim-android'
 Plug 'udalov/kotlin-vim'
 

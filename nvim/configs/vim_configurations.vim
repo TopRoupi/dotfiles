@@ -34,13 +34,13 @@ set number
 set list!                       " Display unprintable characters
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:«
 autocmd filetype html,xml,go set listchars=tab:\│\ ,trail:-,extends:>,precedes:<,nbsp:+
-" colorscheme railscasts
+colorscheme railscasts
 " colorscheme badwolf
 " colorscheme gruvbox
 " let g:gruvbox_contrast_dark = 'hard'
 " colorscheme molokai
 " let g:molokai_original = 1
-colorscheme base16-default-dark
+" colorscheme base16-default-dark
 " colorscheme new-railscasts
 " colorscheme monokai
 " colorscheme vim-monokai-tasty

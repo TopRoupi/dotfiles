@@ -14,6 +14,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
 Plug 'wfxr/minimap.vim'
 Plug 'LnL7/vim-nix'
+Plug 'ryanoasis/vim-devicons'
 
 "themes
 Plug 'jpo/vim-railscasts-theme'

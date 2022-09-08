@@ -6,6 +6,9 @@
 !rubocop/
 nvim/undo
 nvim/viminfo.tmp.a
+nvim/viminfo.tmp.b
+nvim/viminfo.tmp.c
+nvim/viminfo.tmp.d
 nvim/viminfo
 !fish/
 

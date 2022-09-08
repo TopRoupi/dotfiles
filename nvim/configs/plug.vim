@@ -15,7 +15,7 @@ Plug 'mhinz/vim-startify'
 Plug 'wfxr/minimap.vim'
 Plug 'LnL7/vim-nix'
 Plug 'ryanoasis/vim-devicons'
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 
 "themes
 Plug 'jpo/vim-railscasts-theme'
@@ -49,6 +49,8 @@ Plug 'udalov/kotlin-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'pantharshit00/vim-prisma'
+
+Plug 'w0rp/ale'
 
 " file explorer
 Plug 'scrooloose/nerdtree'|

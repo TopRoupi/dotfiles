@@ -2,16 +2,5 @@
   "solargraph.diagnostics": true,
   "solargraph.autoformat": true,
   "solargraph.formatting": true,
-  "solargraph.hover": true,
-  "languageserver": {
-    "crystal": {
-      "command": "crystalline",
-      "args": [
-        "--stdio"
-      ],
-      "filetypes": [
-        "crystal"
-      ]
-    }
-  }
+  "solargraph.hover": true
 }

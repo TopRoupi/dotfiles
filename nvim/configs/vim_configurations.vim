@@ -35,6 +35,7 @@ set list!                       " Display unprintable characters
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:«
 autocmd filetype html,xml,go set listchars=tab:\│\ ,trail:-,extends:>,precedes:<,nbsp:+
 colorscheme railscasts
+" colorscheme railscasts
 " colorscheme badwolf
 " colorscheme gruvbox
 " let g:gruvbox_contrast_dark = 'hard'

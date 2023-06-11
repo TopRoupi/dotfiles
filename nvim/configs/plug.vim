@@ -19,6 +19,7 @@ Plug 'ryanoasis/vim-devicons'
 
 "themes
 Plug 'jpo/vim-railscasts-theme'
+Plug 'gruvbox-material'
 " Plug 'KeitaNakamura/railscasts.vim'
 " Plug 'carakan/new-railscasts-theme'
 " Plug 'patstockwell/vim-monokai-tasty'
@@ -61,7 +62,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'KeitaNakamura/lightline-railscasts.vim'
 Plug 'mengelbrecht/lightline-bufferline'
 " Plug 'maximbaz/lightline-ale'
-Plug 'josa42/vim-lightline-coc'
+" Plug 'josa42/vim-lightline-coc'
 
 " fuzzysearch
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -78,4 +79,13 @@ Plug 'autozimu/LanguageClient-neovim', {
 " Plug 'fishbullet/deoplete-ruby'
 " Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'nvim-treesitter/nvim-treesitter'
+"
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'hrsh7th/cmp-nvim-lsp'
+" Plug 'hrsh7th/cmp-buffer'
+" Plug 'hrsh7th/cmp-path'
+" Plug 'hrsh7th/cmp-cmdline'
+" Plug 'hrsh7th/nvim-cmp'
 call plug#end()

@@ -63,6 +63,8 @@ map <leader>p :GFiles<cr>
 map <leader>r :bufdo bd<cr>
 map <leader>rr :%bd\|e#<cr>
 
+map <leader>x :bd<cr>
+
 " terminal
 map <leader>cn :FloatermNew --wintype=split<cr>
 map <leader>c :FloatermToggle<cr>

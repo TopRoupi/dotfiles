@@ -1,8 +1,10 @@
-source ~/.config/nvim/configs/plug.vim
-source ~/.config/nvim/configs/my_shortcuts.vim
-source ~/.config/nvim/configs/autocomplete_and_lang_server.vim
-source ~/.config/nvim/configs/lightline.vim
-source ~/.config/nvim/configs/vim_configurations.vim
-source ~/.config/nvim/configs/startify.vim
-source ~/.config/nvim/configs/linters.vim
-" source ~/.config/nvim/configs/lsp.lua
+lua require('plugins')
+lua require('gitsigns').setup()
+lua require('lsp_config')
+lua require('cmd_config')
+lua require('heirline_config')
+lua require("toggleterm").setup()
+
+source ~/.config/nvim/vim/configs.vim
+source ~/.config/nvim/vim/shortcuts.vim
+

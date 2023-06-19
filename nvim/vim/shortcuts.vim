@@ -1,9 +1,9 @@
 let mapleader = ","
 
 " file explorer
-nnoremap <silent> <C-k><C-B> :NERDTreeToggle<CR>
-nmap <leader>bn :NERDTreeFocus<CR>
-let NERDTreeQuitOnOpen=1
+nnoremap <silent> <C-k><C-B> :NeoTreeFocusToggle<CR>
+nmap <leader>bn :NeoTreeFocusToggle<CR>
+nmap <leader>e :NeoTreeFloat<CR>
 
 " noob shotcuts
 nnoremap <C-z> u
@@ -20,10 +20,12 @@ nnoremap <Tab> :bnext<CR>
 nnoremap <C-Tab> :bnext<CR>
 nnoremap <S-Tab> :bprev<CR>
 
+nnoremap <leader>n :Navbuddy<CR>
+
 " tests execution
-nnoremap <leader>t :TestNearest<CR>
-nnoremap <leader>T :TestFile<CR>
-nnoremap <leader>ttt :TestSuite<CR>
+" nnoremap <leader>t :TestNearest<CR>
+" nnoremap <leader>T :TestFile<CR>
+" nnoremap <leader>ttt :TestSuite<CR>
 
 " window nav
 nnoremap <M-h> <C-w>h
@@ -56,8 +58,8 @@ inoremap <C-Up> <Esc>:m .-2<CR>==gi
 vnoremap <C-Down> :m '>+1<CR>gv=gv
 vnoremap <C-Up> :m '<-2<CR>gv=gv
 
-map <C-p> :GFiles<cr>
-map <leader>p :GFiles<cr>
+map <C-p> :Telescope find_files<cr>
+map <leader>p :Telescope find_files<cr>
 
 " clear buffers
 map <leader>r :bufdo bd<cr>
@@ -66,10 +68,4 @@ map <leader>rr :%bd\|e#<cr>
 map <leader>x :bd<cr>
 
 " terminal
-map <leader>cn :FloatermNew --wintype=split<cr>
-map <leader>c :FloatermToggle<cr>
-map <leader>ck :FloatermKill!<cr>
-map <leader>cs :FloatermNext<cr>
-map <leader>cx :FloatermPrev<cr>
-map <leader>ct :FloatermNew --height=0.6 --width=0.6 --wintype=float --position=topleft --autoclose=0 rails test<cr>
-" map <leader>c :Term<cr>
+map <leader>c :ToggleTerm<cr>

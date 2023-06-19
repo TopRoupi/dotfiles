@@ -3,6 +3,8 @@
 !.gitignore
 
 !nvim/
+!nvim/lua
+!nvim/vim
 !rubocop/
 nvim/undo
 nvim/viminfo.tmp.a

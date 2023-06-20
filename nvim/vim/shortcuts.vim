@@ -69,3 +69,5 @@ map <leader>x :bd<cr>
 
 " terminal
 map <leader>c :ToggleTerm<cr>
+
+map <leader>bb :BufferPick<cr>

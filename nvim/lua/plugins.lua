@@ -45,6 +45,8 @@ return require('packer').startup(function(use)
 
   use 'romgrk/barbar.nvim'
 
+  use "vim-crystal/vim-crystal"
+
   use {
     "SmiteshP/nvim-navbuddy",
     requires = {

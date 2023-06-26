@@ -21,4 +21,6 @@ require'lspconfig'.solargraph.setup{
 
 require'lspconfig'.standardrb.setup{}
 
+require'lspconfig'.crystalline.setup{}
+
 require"fidget".setup{}

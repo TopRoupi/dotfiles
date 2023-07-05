@@ -58,8 +58,8 @@ inoremap <C-Up> <Esc>:m .-2<CR>==gi
 vnoremap <C-Down> :m '>+1<CR>gv=gv
 vnoremap <C-Up> :m '<-2<CR>gv=gv
 
-map <C-p> :Telescope find_files<cr>
-map <leader>p :Telescope find_files<cr>
+map <C-p> :GFiles<cr>
+map <leader>p :GFiles<cr>
 
 " clear buffers
 map <leader>r :bufdo bd<cr>
@@ -70,4 +70,4 @@ map <leader>x :bd<cr>
 " terminal
 map <leader>c :ToggleTerm<cr>
 
-map <leader>bb :BufferPick<cr>
+" map <leader>bb :BufferPick<cr>

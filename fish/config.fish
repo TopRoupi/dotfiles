@@ -11,3 +11,5 @@ alias cfish='nvim ~/.config/fish/config.fish'
 alias ns=nsbox-edge
 alias nsbox=nsbox-edge
 alias nr='nsbox-edge run'
+
+fish_vi_key_bindings

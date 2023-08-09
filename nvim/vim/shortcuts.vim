@@ -70,4 +70,8 @@ map <leader>x :bd<cr>
 " terminal
 map <leader>c :ToggleTerm<cr>
 
+nnoremap K :lua vim.lsp.buf.hover()<CR>
+
+nnoremap <leader>lr :LspRestart<CR>
+
 " map <leader>bb :BufferPick<cr>

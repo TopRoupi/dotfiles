@@ -413,13 +413,13 @@ local ViMode = {
     end,
     -- Re-evaluate the component only on ModeChanged event!
     -- Also allows the statusline to be re-evaluated when entering operator-pending mode
-    update = {
-        "ModeChanged",
-        pattern = "*:*",
-        callback = vim.schedule_wrap(function()
-            vim.cmd("redrawstatus")
-        end),
-    },
+    -- update = {
+    --     "ModeChanged",
+    --     pattern = "*:*",
+    --     callback = vim.schedule_wrap(function()
+    --         vim.cmd("redrawstatus")
+    --     end),
+    -- },
 }
 
 local FileNameBlock = {

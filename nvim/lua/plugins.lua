@@ -4,7 +4,26 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+  use {
+    "nvim-neotest/neotest",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "antoinemadec/FixCursorHold.nvim",
+      "olimorris/neotest-rspec",
+    },
+    config = function()
+      require("neotest").setup({
+        adapters = {
+          require("neotest-rspec"),
+        }
+      })
+    end
+  }
+
   use 'wbthomason/packer.nvim'
+
+  use 'wuelnerdotexe/vim-astro'
 
   use 'jpo/vim-railscasts-theme'
 
@@ -13,6 +32,8 @@ return require('packer').startup(function(use)
   use "rebelot/heirline.nvim"
 
   use "rebelot/kanagawa.nvim"
+
+  use "slim-template/vim-slim"
 
   use "lewis6991/gitsigns.nvim"
 

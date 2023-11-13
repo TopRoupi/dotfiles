@@ -4,6 +4,7 @@ lua require('lsp_config')
 lua require('cmd_config')
 lua require('heirline_config')
 lua require("toggleterm").setup()
+lua require("neotest")
 
 source ~/.config/nvim/vim/configs.vim
 source ~/.config/nvim/vim/shortcuts.vim

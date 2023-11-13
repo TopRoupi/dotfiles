@@ -23,9 +23,9 @@ nnoremap <S-Tab> :bprev<CR>
 nnoremap <leader>n :Navbuddy<CR>
 
 " tests execution
-" nnoremap <leader>t :TestNearest<CR>
-" nnoremap <leader>T :TestFile<CR>
-" nnoremap <leader>ttt :TestSuite<CR>
+nnoremap <leader>t :TestNearest<CR>
+nnoremap <leader>T :TestFile<CR>
+nnoremap <leader>ttt :TestSuite<CR>
 
 " window nav
 nnoremap <M-h> <C-w>h

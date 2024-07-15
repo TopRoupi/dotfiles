@@ -1,0 +1,23 @@
+[
+  {
+    "context": "VimControl",
+    "bindings": {
+      // ", n": "workspace::ToggleLeftDock",
+      ", r": "workspace::CloseInactiveTabsAndPanes",
+      // ", c": "workspace::ToggleBottomDock",
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePrevItem"
+    }
+  },
+  {
+    "bindings": {
+      "alt-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "alt-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "alt-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "alt-j": ["workspace::ActivatePaneInDirection", "Down"],
+      ", n": "workspace::ToggleLeftDock",
+      ", c": "workspace::ToggleBottomDock",
+      ", x": "pane::CloseActiveItem"
+    }
+  }
+]

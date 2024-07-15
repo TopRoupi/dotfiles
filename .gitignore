@@ -3,6 +3,7 @@
 !.gitignore
 
 !nvim/
+!zed/
 !nvim/lua
 !nvim/vim
 !rubocop/

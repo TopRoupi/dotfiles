@@ -13,16 +13,16 @@ require'lspconfig'.pyright.setup{
     end
 }
 
-require'lspconfig'.solargraph.setup{
-    capabilities = capabilities,
-    on_attach = function(client, bufnr)
-        navic.attach(client, bufnr)
-        navbuddy.attach(client, bufnr)
-        -- vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
-    end
-}
-
-require'lspconfig'.standardrb.setup{}
+-- require'lspconfig'.solargraph.setup{
+--     capabilities = capabilities,
+--     on_attach = function(client, bufnr)
+--         navic.attach(client, bufnr)
+--         navbuddy.attach(client, bufnr)
+--         -- vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+--     end
+-- }
+--
+-- require'lspconfig'.standardrb.setup{}
 
 require'lspconfig'.crystalline.setup{}
 

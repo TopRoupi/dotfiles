@@ -3,9 +3,10 @@ set fish_greeting
 . $HOME/.asdf/asdf.fish
 . $HOME/.asdf/completions/asdf.fish
 
-. ~/.asdf/plugins/dotnet-core/set-dotnet-home.fish
+# . ~/.asdf/plugins/dotnet-core/set-dotnet-home.fish
 
 export ANDROID_HOME=$HOME/Android/Sdk
+export EDITOR=nvim
 
 alias vim='nvim'
 alias cnvim='nvim ~/.config/nvim/init.vim'

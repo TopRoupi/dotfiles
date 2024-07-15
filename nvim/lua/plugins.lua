@@ -4,6 +4,8 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+  use 'APZelos/blamer.nvim'
+
   use {
     "nvim-neotest/neotest",
     requires = {
